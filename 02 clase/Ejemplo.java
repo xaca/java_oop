@@ -1,0 +1,7 @@
+class Sesion{
+	
+	public Sesion(){
+
+	}
+
+}
