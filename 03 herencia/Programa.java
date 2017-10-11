@@ -14,6 +14,7 @@ public class Programa{
 
 		for(int i=0;i<zoo.length;i++){
 			System.out.println(zoo[i].getNombre());
+			//System.out.println(zoo[i].hacerRuido()); ¿Como hacemos para que cada animal exprese su ruido caracteristico?
 		}
 
 		((Loro)zoo[2]).hablar();
