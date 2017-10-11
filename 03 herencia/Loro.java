@@ -16,8 +16,16 @@ public class Loro extends Ave{
 
 	public void hablar(){
 
-		int aleatorio = Math.round(Math.random()*palabras.length);
+		int aleatorio = (int)(Math.random()*palabras.length);
 		System.out.println(palabras[aleatorio]);
 
+	}
+
+	public void setPuedeHablar(boolean puede_hablar){
+		this.puede_hablar = puede_hablar;
+	}
+
+	public boolean isPuedeHablar(){
+		return puede_hablar;
 	}
 }
