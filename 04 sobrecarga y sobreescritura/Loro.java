@@ -13,6 +13,11 @@ public class Loro extends Ave{
 		palabras[3] = "¿Quiere cacao?";
 	}
 
+	public void hacerRuido(String palabra){
+
+		System.out.println("Repetir "+palabra);
+
+	}
 
 	public void hacerRuido(){
 

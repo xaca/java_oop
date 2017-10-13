@@ -18,6 +18,8 @@ public class Programa{
 			zoo[i].hacerRuido();//R.Sobreescribiendo el método
 		}
 
+		((Loro)zoo[2]).hacerRuido("Nueva palabra");//Sobrecarga del método		
+
 		//((Loro)zoo[2]).hablar(); Ya no es necesario invocar el metodo por separado
 	}
 }
