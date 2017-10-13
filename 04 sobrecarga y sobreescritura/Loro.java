@@ -13,7 +13,8 @@ public class Loro extends Ave{
 		palabras[3] = "¿Quiere cacao?";
 	}
 
-	public void hablar(){
+
+	public void hacerRuido(){
 
 		int aleatorio = (int)(Math.random()*palabras.length);
 		System.out.println(palabras[aleatorio]);
