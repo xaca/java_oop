@@ -11,6 +11,7 @@ public class Family {
 	private Character father;		  //Eddard Stark
 	private Character mother;         //Catelyn Stark
 	private List<Character> children; //Robb Stark, Sansa Stark,Arya Stark,Bran Stark,Rickon Stark
+	private List <Character> siblings; 
 	
 	public Family() {S}
 
@@ -37,4 +38,12 @@ public class Family {
 	public void setChildren(List<Character> children) {
 		this.children = children;
 	}
+	public List<Character> getSiblings() {
+		return siblings;
+	}
+
+	public void setSiblings(List<Character> sibings) {
+		this.siblings = siblings;
+	}
+	
 }
