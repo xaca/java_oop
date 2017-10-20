@@ -10,6 +10,10 @@ class Programa{
 		//generico.estaCargada();
 		((MotoElectrica)generico).estaCargada();
 
+		/*
+		¿Cómo podríamos incluir el concepto Bateria en este problema? 
+		La Bicicleta, el carro y la moto tienen una bateria.
+		*/
 		Vehiculo parqueadero [] = {new MotoElectrica(), new BicicletaRuta(), new Carro() };
 	}
 }

@@ -32,6 +32,6 @@ public class Carro extends Vehiculo{
 
 	public void cambiarCambio(int nuevo_cambio)
 	{
-		cambio_actual = nuevo_cambio;
+		this.cambio_actual = nuevo_cambio;
 	}
 }
