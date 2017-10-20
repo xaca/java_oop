@@ -2,6 +2,7 @@ public abstract class Vehiculo {
 	private String nombre;
 	private boolean esta_moviendose;
 	protected int cambio_actual;
+	private int numero_llantas;
 
 	//¿Por que una clase abstracta permite tener constructores?
 	public Vehiculo(){}
