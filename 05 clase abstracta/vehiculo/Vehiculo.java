@@ -3,7 +3,15 @@ public abstract class Vehiculo {
 	private boolean esta_moviendose;
 	protected int cambio_actual;
 
+	//¿Por que una clase abstracta permite tener constructores?
+	public Vehiculo(){}
+	public Vehiculo(String nombre){
+		this.nombre = nombre;
+	}
+	//No es obligatorio tener metodos abstractos en una clase abstracta,
+	//Pero si es lo ideal, depende del diseño.
 	public abstract void acelerar();
+
 	public void frenar(){
 		esta_moviendose = false;
 	}

@@ -1,4 +1,4 @@
-class Moto extends Vehiculo {
+public abstract class Moto extends Vehiculo {
 	private int rpm;
 
 	public void revolucionarMotor()
@@ -8,7 +8,9 @@ class Moto extends Vehiculo {
 		}
 	}
 
-	public void acelerar(){
+	//public void acelerar(){} No es una buena practica, porque no hay implementación
+
+	/*public void acelerar(){
 
 		cambio_actual = 1;
 		
@@ -18,5 +20,5 @@ class Moto extends Vehiculo {
 			cambio_actual = 2;
 		}
 
-	}
+	}*/
 }
