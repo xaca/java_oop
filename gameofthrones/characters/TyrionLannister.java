@@ -1,4 +1,4 @@
-public class TyrionLannister {
+public class TyrionLannister extends Character {
 
     private List<String> titles = new ArrayList<String>();
     tites.add("Lord of Casterly Rock");

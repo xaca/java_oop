@@ -1,4 +1,4 @@
-public class AryaStark {
+public class AryaStark extends Character {
 
     private List<String> titles = new ArrayList<String>();
     private String fullname = "Eddard Stark";

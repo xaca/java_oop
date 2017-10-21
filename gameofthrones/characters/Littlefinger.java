@@ -1,4 +1,4 @@
-public class Littlefinger {
+public class Littlefinger extends Character {
 
     private List<String> titles = new ArrayList<String>();
     titles.add("Lord Protector of the Vale");

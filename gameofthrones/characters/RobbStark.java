@@ -1,4 +1,4 @@
-public class RobbStark {
+public class RobbStark extends Character {
 
     private List<String> titles = new ArrayList<String>();
     tites.add("King in the North");

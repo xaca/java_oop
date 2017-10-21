@@ -1,4 +1,4 @@
-public class Sansa {
+public class Sansa extends Character {
 
     private List<String> titles = new ArrayList<String>();
     titles.add("Lady of Winterfell");

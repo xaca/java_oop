@@ -1,4 +1,4 @@
-public class EddardStark {
+public class EddardStark extends Character {
 
     private List<String> titles = new ArrayList<String>();
     tites.add("Lord of Winterfell");
