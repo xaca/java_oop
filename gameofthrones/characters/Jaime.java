@@ -1,4 +1,4 @@
-public class Jaime {
+public class Jaime extends Character {
 
     private List<String> titles = new ArrayList<String>();
     titles.add("Kingslayer");
