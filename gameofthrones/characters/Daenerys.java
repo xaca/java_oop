@@ -1,4 +1,4 @@
-public class Daenerys {
+public class Daenerys extends Character {
 
     private List<String> titles = new ArrayList<String>();
     titles.add("Queen of the Andals and the First Men");

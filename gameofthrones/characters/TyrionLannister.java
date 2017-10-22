@@ -1,4 +1,3 @@
-
 /**
  * Tyrion character object that sets all the fields in the constructor
  * Extending the Character class will allow for code reuse
@@ -21,6 +20,7 @@ public class TyrionLannister extends Character{
 		this.fullName = "Tyrion Lannister";
 		this.portrayedBy = "Peter Dinklage"
 		//house might be better assigned if it was passed into the constructor
+    //this character, could be from different houses, but only could be currently in a house
 		this.house = house;
 	}
 
@@ -34,3 +34,4 @@ public class TyrionLannister extends Character{
 		
 	}
 }
+
