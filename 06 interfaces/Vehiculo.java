@@ -6,9 +6,12 @@ public abstract class Vehiculo {
 	protected float kilometraje;
 
 	//¿Por que una clase abstracta permite tener constructores?
-	public Vehiculo(){}
-	public Vehiculo(String nombre){
+	protected Vehiculo(){}
+	protected Vehiculo(String nombre){
 		this.nombre = nombre;
+	}
+	protected Vehiculo(float kilometraje){
+		this.kilometraje = kilometraje;
 	}
 	//No es obligatorio tener metodos abstractos en una clase abstracta,
 	//Pero si es lo ideal, depende del diseño.
@@ -23,5 +26,13 @@ public abstract class Vehiculo {
 	}
 	public void arrancar(){
 		esta_moviendose = true;
+	}
+
+	protected void setKilometraje(float kilometraje){
+		this.kilometraje = kilometraje;
+	}
+
+	protected float getKilometraje(){
+		return kilometraje;
 	}
 }

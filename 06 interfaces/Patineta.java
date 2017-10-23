@@ -1,5 +1,14 @@
 public class Patineta extends Vehiculo implements Mantenimiento {
 	
+	public Patineta(){
+		super((float)Math.random()*10000);
+	}
+
+	public String toString()
+    {
+        return "Patineta tiene "+kilometraje+" km";
+    }
+
 	public void acelerar()
 	{
 		desplazamiento();

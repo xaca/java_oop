@@ -1,3 +1,7 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
 class Programa{
 	public static void main(String[] args) {
 		
@@ -14,6 +18,19 @@ class Programa{
 		¿Cómo podríamos incluir el concepto Bateria en este problema? 
 		La Bicicleta, el carro y la moto tienen una bateria.
 		*/
-		Vehiculo parqueadero [] = {new MotoElectrica(), new BicicletaRuta(), new Carro() };
+		ArrayList<Vehiculo> parqueadero = new ArrayList<Vehiculo>();
+		parqueadero.add(new BicicletaRuta());
+		parqueadero.add(new Carro());
+		parqueadero.add(new BicicletaRuta());
+		parqueadero.add(new Carro());
+		parqueadero.add(new Carro());
+		parqueadero.add(new Patineta());
+		parqueadero.add(new Carro());
+		parqueadero.add(new MotoElectrica());
+
+		Collections.sort(parqueadero,new Ordenar());//Se ordena por kilometraje
+
+		for (int i=0; i<parqueadero.size(); i++)
+            System.out.println(parqueadero.get(i));
 	}
 }

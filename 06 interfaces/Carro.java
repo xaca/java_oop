@@ -3,6 +3,15 @@ public class Carro extends Vehiculo implements CambioDeMarcha,Mantenimiento {
 	private String tipo_combustible;
 	private boolean clutch_liberado;
 
+	public Carro(){
+		super((float)Math.random()*10000);		
+	}
+
+	public String toString()
+    {
+        return "Carro tiene "+kilometraje+" km";
+    }
+
 	public void acelerar(){
 
 		if(!encendido)

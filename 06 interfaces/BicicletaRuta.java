@@ -1,6 +1,10 @@
 class BicicletaRuta extends Bicicleta implements CambioDeMarcha,Mantenimiento {
 	public float inclinacion;
 
+	public BicicletaRuta(){
+		super((float)Math.random()*10000);
+	}
+
 	/* Observe que el método realizarCambio es similar al cambiarCambio de la clase Carro,
 	   ¿Cómo podriamos estandarizar el nombre de los métodos?
 	   Rta/. Realizando una interfaz con un método estandar que debe ser implementado
@@ -8,6 +12,11 @@ class BicicletaRuta extends Bicicleta implements CambioDeMarcha,Mantenimiento {
 	public void realizarCambio(int cambio_actual){
 		this.cambio_actual = cambio_actual;
 	}
+
+	public String toString()
+    {
+        return "Bicicleta tiene "+kilometraje+" km";
+    }
 
 	public void acelerar(){
 		if(inclinacion==0)

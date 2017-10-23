@@ -1,6 +1,9 @@
 public abstract class Moto extends Vehiculo {
 	private int rpm;
-
+	
+	protected Moto(float kilometraje){
+		super(kilometraje);
+	}
 	public void revolucionarMotor()
 	{
 		for (int i=0; i< 5000; i++ ) {
