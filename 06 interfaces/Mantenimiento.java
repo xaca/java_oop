@@ -14,9 +14,11 @@ public interface Mantenimiento{
     - Miembros datos constantes marcados como public static final
 	*/
 
+    /* Las constantes no son de uso obligatorio por parte de las clases concretas
+    que implementan la interfaz*/
 	public static final float CAMBIO_LLANTAS_BICICLETA = 1000F;
 	public static final float CAMBIO_LLANTAS_PATINETA = 100F;
-	public static final float CAMBIO_LLANTAS_MOTO = 10000F;
+	public static final float CAMBIO_LLANTAS_MOTO = 8000F;
 	public static final float CAMBIO_LLANTAS_CARRO = 30000F;
 
 	public void engrasarPartesMoviles();

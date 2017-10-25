@@ -43,7 +43,7 @@ public class Carro extends Vehiculo implements CambioDeMarcha,Mantenimiento {
 		{
 			System.out.println("Rotacion de las llantas");
 		}
-		else
+		else if(cantidad_kilometros>Mantenimiento.CAMBIO_LLANTAS_CARRO)
 		{
 			System.out.println("Comprar nuevas llantas");
 		}
@@ -73,6 +73,13 @@ public class Carro extends Vehiculo implements CambioDeMarcha,Mantenimiento {
 		if(clutch_liberado && cambio_actual > 0){
 			System.out.println("Avanzando");
 			desplazamiento();
+			//Solución temporal para el caso de que un vehiculo no se le vuelva a
+			//realizar mantenimiento teniendo en cuenta el kilomentraje
+			//Pendiente mejorar
+			if(kilometraje + 1000 > Mantenimiento.CAMBIO_LLANTAS_CARRO)
+			{
+				this.hizo_mantenimiento = false;
+			}
 		}
 	}
 

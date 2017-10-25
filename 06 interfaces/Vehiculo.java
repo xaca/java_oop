@@ -1,6 +1,7 @@
 public abstract class Vehiculo {
 	private String nombre;
 	private boolean esta_moviendose;
+	protected boolean hizo_mantenimiento;
 	protected int cambio_actual;
 	private int numero_llantas;
 	protected float kilometraje;
