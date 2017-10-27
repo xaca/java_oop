@@ -19,12 +19,15 @@ class Excepciones
 		
 		StringBuilder str = new StringBuilder();//null;
 		int x[] = new int[3];
+		
+		// ¿Es posible tener varios finally en varios try-catch anidados? 
 		try{
-			/*str.append("Hola Mundo");
-			noHaverNada();
-			throw new MiExcepcion();*/
-			str = null;
 			str.append("Hola Mundo");
+			//noHaverNada();
+			throw new MiExcepcion();
+			//System.out.println("No se ejecuta esta linea, no compila, si hay un throw antes");
+			/*str = null;
+			str.append("Hola Mundo"); Activar para probar los try-catch anidados*/
 		}
 		catch(NullPointerException e1){
 			//Se debe tener precaución con el nombre de la variable e1, debe ser diferente dentro de este contexto
@@ -41,15 +44,19 @@ class Excepciones
 				{
 					System.out.println("Podemos seguir atrapando otras excepciones");
 				}
+				finally{
+					System.out.println("¡Si es posible!");
+				}
+
 			}
 			
 		}
 		/*catch(OtraExcepcion e){
 			System.out.println("OtraExcepcion "+e);
-		}
+		}*/
 		catch(MiExcepcion e){
 			System.out.println("MiExcepcion "+e);
-		}*/
+		}
 		catch(Exception e){
 			System.out.println("Exception "+e);
 		}
