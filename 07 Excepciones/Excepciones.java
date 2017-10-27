@@ -10,6 +10,10 @@ class Excepciones
 	capture diferentes tipos de excepciones. Vaya de lo general a lo particular
 
 	¿Es posible realizar un try-catch dentro de un catch, es decir un try-catch anidado?
+
+	Realice la clase ExcepcionFantasma, que herede de Exception y luego cree las clases hijas
+	ExcepcionGasparin y ExcepcionPegajoso. Luego cree la clase ScoobyDoo y capture las diferentes 
+	ExcepcionesFantasma
 	*/
 	public static void noHaverNada()throws OtraExcepcion{
 		throw new OtraExcepcion();
