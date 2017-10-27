@@ -1,0 +1,3 @@
+class MiExcepcion extends Exception {
+	
+}
