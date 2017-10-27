@@ -15,8 +15,11 @@ class Excepciones
 	ExcepcionGasparin y ExcepcionPegajoso. Luego cree la clase ScoobyDoo y capture las diferentes 
 	ExcepcionesFantasma
 	*/
+
+	//Se pueden lanzar varias excpeciones se deben separar por comas
 	public static void noHaverNada()throws OtraExcepcion{
 		throw new OtraExcepcion();
+		//System.out.println("¿Compila?"); No se alcanza
 	}
 
 	public static void main(String[] args) {
@@ -27,7 +30,7 @@ class Excepciones
 		// ¿Es posible tener varios finally en varios try-catch anidados? 
 		try{
 			str.append("Hola Mundo");
-			//noHaverNada();
+			noHaverNada();
 			throw new MiExcepcion();
 			//System.out.println("No se ejecuta esta linea, no compila, si hay un throw antes");
 			/*str = null;
@@ -55,10 +58,12 @@ class Excepciones
 			}
 			
 		}
-		/*catch(OtraExcepcion e){
+		catch(OtraExcepcion e){
 			System.out.println("OtraExcepcion "+e);
-		}*/
+			e.printStackTrace();
+		}
 		catch(MiExcepcion e){
+			e.printStackTrace();
 			System.out.println("MiExcepcion "+e);
 		}
 		catch(Exception e){
